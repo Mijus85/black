@@ -1,0 +1,15 @@
+practice.buildpage:
+  path: '/practice-page'
+  defaults:
+    _controller: 'Drupal\practice\Controller\PracticeController::buildPage'
+    _title: 'Practice'
+  requirements:
+    _permission: 'access content'
+
+practice.formpage:
+  path: '/practice-form'
+  defaults:
+    _form: 'Drupal\practice\Form\PracticeForm'
+    _title: 'Forma'
+  requirements:
+   _permission: 'access content'

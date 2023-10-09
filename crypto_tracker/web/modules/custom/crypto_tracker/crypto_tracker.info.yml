@@ -1,0 +1,9 @@
+name: cryptotracker
+description: A module that shows top 100 ranked cryptocurrencies
+type: module
+core_version_requirement: ^9 || ^10
+
+dependencies:
+
+- drupal:block
+  

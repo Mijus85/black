@@ -1,0 +1,4 @@
+services:
+  crypto_tracker:
+    class:  'Drupal\crypto_tracker\CryptoTrackerService'
+    arguments: ['@http_client']

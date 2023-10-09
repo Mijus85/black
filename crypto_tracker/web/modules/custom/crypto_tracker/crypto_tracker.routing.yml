@@ -1,0 +1,19 @@
+crypto_tracker.getcoins:
+  path: '/crypto-tracker'
+  defaults:
+    _controller: 'Drupal\crypto_tracker\Controller\CryptoTracker::getCoins'
+    _title: 'CRYPTO TRACKER'
+  requirements:
+    _permission: 'access content'
+
+crypto_tracker.resultspage:
+  path: '/crypto-results'
+  defaults:
+    _controller: 'Drupal\crypto_tracker\Controller\CryptoTracker::resultsPage'
+    _title: 'CRYPTO RESULTS'
+  requirements:
+    _permission: 'access content'
+
+
+
+

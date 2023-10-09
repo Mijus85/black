@@ -1,0 +1,23 @@
+name: coinapp
+recipe: drupal10
+config:
+  webroot: ./crypto_tracker/web
+  php: 8.1
+  database: 'mysql'
+services:
+  myservice:
+    type: phpmyadmin
+  defaults:
+    type: mysql
+    creds:
+      user: drupal10
+      password: drupal10
+      database: drupal10
+    config:
+      database: config/my-custom.cnf
+    
+
+# This is important because it lets lando know to test against the plugin in this repo
+# DO NOT REMOVE THIS!
+plugins:
+  "@lando/mysql": ./../../
